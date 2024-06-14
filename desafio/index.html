@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/programacao.png" type="image/x-icon">
+    <title>Computadores da atualidade</title>
+</head>
+<body>
+    <header>
+        <nav class="cabecalho">
+            <div class="cabecalho1">
+                <a class="title" href="index.html">Desafio Web</a>
+            </div>
+
+            <div class="cabecalho2">
+                <a href="html/forum.html">Forum</a>
+            </div>
+        </nav>
+        <div class="linha"></div>
+    </header>
+
+    <article class="container">
+
+        <div class="image1">
+            <img id="foto-princ" src="images/logo.png" alt="">
+        </div>
+
+        <div class="texto-intro">
+            <p id="id-2">
+                <br>
+                    Sempre se questionou sobre como as pessoas se desenvolveram a ter os computadores como um dos meios essenciais de seu dia a dia?
+                <br>
+                <br>
+                    Quer monitorar o tempo, viajar ao redor do mundo ou apenas relaxar após o expediente de trabalho, computadores maravilhosos estão sempre à mão para ajudar em qualquer tarefa ou estabelecer uma conexão com o mundo distante, ao mesmo tempo que fornecem acesso a informações e entretenimento. Neste espaço, descrevemos alguns tipos de computadores modernos na tendência hoje em dia e desenvolvemos ideias inovadoras. Desktops em que novas ideias são criadas e os laptops estão sempre conosco enquanto nos movemos e dispositivos inteligentes que parecem conter o muno em nossa mão. Esses computadores têm suas características específicas que se adaptam a necessidades e estilo de vida específico.
+                <br>
+                <br>
+                A diversidade dos tipos de computadores disponíveis hoje reflete a vasta gama de necessidades e contextos em que são utilizados. Desde o poderoso supercomputador até o prático smartphone, cada tipo de computador tem um papel único na facilitação de tarefas e na melhora da vida cotidiana, tanto pessoal quanto profissionalmente.    
+                <br>
+                <br>
+                Aqui abaixo estão alguns modelos de computadores.
+                </p>
+        </div>
+
+        <!-- CONTEUDO POPOUT -->
+
+        <div class="intro">
+            <button class="img-card" onclick="togglePopout('popout1')">
+                <img src="images/notebook.png" alt="Notebook">
+                <p>Notebook</p>
+            </button>
+
+            <button class="img-card" onclick="togglePopout('popout2')">
+                <img src="images/desktop.png" alt="Desktop">
+                <p>Desktop</p>
+            </button>
+
+            <button class="img-card" onclick="togglePopout('popout3')">
+                <img src="images/pcgamer.png" alt="PcGamer">
+                <p>Pc Gamer</p>
+            </button>
+
+            <button class="img-card" onclick="togglePopout('popout4')">
+                <img src="images/servidor.png" alt="Servidor">
+                <p>Servidor</p>
+            </button>
+
+        </div>
+
+        <!-- POPOUT -->
+
+        <div id="popout1" class="popout-container">
+            <div class="popout-conteudo">
+                <img src="images/notebook.png" alt="">
+                <button class="close-button" onclick="togglePopout(popout1)">&times;</button>
+                <div class="scrollable-content">
+                    <p>
+                        O notebook é um computador portátil que combina a funcionalidade de um desktop em um dispositivo compacto e leve. Projetado para oferecer mobilidade, ele é ideal para estudantes, profissionais e qualquer pessoa que precise de um computador que possa ser usado em diferentes lugares. Os notebooks variam amplamente em termos de desempenho e características, desde modelos básicos para tarefas simples como navegação na internet e processamento de texto, até máquinas potentes para jogos, edição de vídeo e desenvolvimento de software. Com sua bateria integrada, os notebooks permitem horas de uso sem a necessidade de estar conectado a uma fonte de energia, proporcionando flexibilidade e conveniência no dia a dia.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="popout2" class="popout-container">
+            <div class="popout-conteudo">
+                <button class="close-button" onclick="togglePopout(popout2)">&times;</button>
+                <img src="images/desktop.png" alt="">
+                <div class="scrollable-content">
+                    <p>
+                        Os desktops são os computadores tradicionais que consistem em uma unidade central (CPU), monitor, teclado e mouse. Conhecidos por sua potência e capacidade de atualização, são amplamente utilizados em ambientes de trabalho, residências e escolas. Ideais para uma variedade de tarefas, desde navegação na internet até trabalhos complexos como design gráfico e edição de vídeo, os desktops oferecem desempenho robusto e flexibilidade, tornando-se uma escolha popular para quem busca uma solução de computação poderosa e versátil.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="popout3" class="popout-container">
+            <div class="popout-conteudo">
+                <button class="close-button" onclick="togglePopout(popout3)">&times;</button>
+                <img src="images/pcgamer.png" alt="">
+                <div class="scrollable-content">
+                    <p>
+                        Os PCs gamers são computadores especialmente projetados para oferecer desempenho excepcional em jogos. Equipados com processadores potentes, placas de vídeo de alta performance e memória RAM abundante, eles garantem uma experiência de jogo fluida e com gráficos impressionantes. Além disso, esses computadores frequentemente possuem sistemas de resfriamento avançados e opções de personalização, permitindo aos entusiastas ajustar e melhorar seu equipamento para obter a melhor performance possível. Ideais para jogos exigentes e realidade virtual, os PCs gamers são a escolha perfeita para quem busca imersão total e alto desempenho nos jogos.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="popout4" class="popout-container">
+            <div class="popout-conteudo">
+                <button class="close-button" onclick="togglePopout(popout4)">&times;</button>
+                <img src="images/servidor.png" alt="">
+                <div class="scrollable-content">
+                    <p>
+                        Os servidores de torre são computadores projetados para operar como servidores em uma configuração vertical semelhante a um desktop tradicional. Eles são conhecidos por sua versatilidade e capacidade de expansão, com múltiplas baias para discos rígidos e slots para expansão de memória e outros componentes. Utilizados frequentemente em pequenas e médias empresas, os servidores de torre são ideais para hospedar aplicativos, armazenar dados, gerenciar redes e realizar backups. Sua estrutura permite fácil manutenção e upgrades, tornando-os uma escolha prática para ambientes empresariais que necessitam de um servidor confiável e escalável.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <script src="script.js"></script>
+</body>
+</html>
